@@ -9,6 +9,7 @@ The following link describes how to create simple lowpass and high pass first or
 
 ## License
 Author: Steve Lascos
+
 Public Domain
 
 ## Defining the Tone Control
