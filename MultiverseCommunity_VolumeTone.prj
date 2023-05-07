@@ -1,0 +1,70 @@
+{
+  "efxFileVersion": "1.0.0",
+  "company": "Multiverse Community",
+  "effectName": "Volume Tone Pedal",
+  "effectVersion": "",
+  "coreVersion": "1.1.0",
+  "effectShortName": "VT",
+  "effectCategory": "Unspecified",
+  "effectDescription": "A basic volume control with bypass",
+  "numInputs": 1,
+  "numOutputs": 1,
+  "numControls": 3,
+  "effectFilename": "MultiverseCommunity_VolumeTone.efx",
+  "libraryName": "MultiverseCommunity_VolumeTone",
+  "cppClass": "MultiverseCommunity_VolumeTone::VolumeTone",
+  "cppInstBase": "_MultiverseCommunity_VolumeTone",
+  "constructorParams": "",
+  "type": 1,
+  "controls": [
+    {
+      "name": "Bypass",
+      "shortName": "BYP",
+      "description": "Bypasses the effect when enabled",
+      "config": [
+        0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "userData": 1
+    },
+    {
+      "name": "Volume",
+      "shortName": "VOL",
+      "description": "Sets the effect output volume from -40dB to +10dB",
+      "config": [
+        3,
+        0.0,
+        10.0,
+        8.0,
+        0.1000000014901161
+      ],
+      "userData": 0
+    },
+    {
+      "name": "Tone",
+      "shortName": "TONE",
+      "description": "Adjust the lowpass filter cuttoff between 100 Hz and 2500 Hz.",
+      "config": [
+        3,
+        100.0,
+        2500.0,
+        1800.0,
+        24.0
+      ],
+      "userData": 0
+    }
+  ],
+  "projectFileVersion": "1.0.0",
+  "companyLogo": "gfx/company.png",
+  "pedalIcon": "gfx/pedal.png",
+  "publicHeaderFiles": [
+    "inc/VolumeTone.h"
+  ],
+  "privateSourceFiles": [
+    "src/VolumeToneBase.cpp",
+    "src/VolumeTone.cpp"
+  ]
+}
